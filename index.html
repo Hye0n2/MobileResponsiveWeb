@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <header>
+        <span class="open_slide"><i class="fas fa-align-justify" onclick="openSideMenu()"></i></span>INTERIOR
+
+        <div class="side_nav">
+            <a href="#" class="btn_close" onclick="closeSideMenu()"><span>&times;</span></a>
+            <div class="side_menu_login">
+                <i class="far fa-user"></i>
+                <p>INTERIOR</p>
+                <p>로그인을 하시겠습니까?</p>
+            </div>
+
+            <div class="side_nav_item">
+                <a href="#"><i class="fas fa-external-link-alt"></i><span>main</span></a>
+                <a href="#"><i class="fas fa-external-link-alt"></i><span>shop</span></a>
+                <a href="#"><i class="fas fa-external-link-alt"></i><span>lookbook</span></a>
+                <a href="#"><i class="fas fa-external-link-alt"></i><span>project</span></a>
+                <a href="#"><i class="fas fa-external-link-alt"></i><span>service</span></a>
+                <a href="#"><i class="fas fa-external-link-alt"></i><span>community</span></a>
+                <a href="#"><i class="fas fa-external-link-alt"></i><span>회사소개</span></a>
+                <a href="#"><i class="fas fa-phone-alt"></i><span>call</span></a>
+                <br>
+                <hr>
+                <a href="#"><i class="fas fa-cog"></i><span>설정</span></a>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="main_grid">
+            <div class="shop">
+                <p>Shop</p>
+            </div>
+            <div class="lookbook">
+                <p>Lookbook</p>
+            </div>
+            <div class="project">
+                <p>Project</p>
+            </div>
+            <div class="service">
+                <p>Service</p>
+            </div>
+            <div class="community">
+                <p>Community</p>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        function openSideMenu() {
+            document.querySelector(".side_nav").style.width = "410px";
+        }
+
+        function closeSideMenu() {
+            document.querySelector(".side_nav").style.width = "0px";
+        }
+    </script>
+</body>
+
+</html>
